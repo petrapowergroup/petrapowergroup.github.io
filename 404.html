@@ -4,5 +4,5 @@
 <script>
 (function(){var S="https://ahmad12cloud.github.io/petra-store/shop/";
 var m=location.pathname.match(/^\/p\/([A-Za-z0-9_-]{2,40})\/?$/);
-location.replace(m?S+"?p="+m[1]+"&src=link":S);})();
+var r=/[?&]ref=s(&|$)/.test(location.search)?"&ref=s":"";location.replace(m?S+"?p="+m[1]+"&src=link"+r:S);})();
 </script></head><body style="background:#111"></body></html>

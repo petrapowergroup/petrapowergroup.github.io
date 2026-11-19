@@ -73,7 +73,7 @@ PAGE = """<!doctype html>
 <link rel="canonical" href="{target}">
 <link rel="icon" href="/logo.png">
 <meta http-equiv="refresh" content="0;url={target}">
-<script>location.replace({target_js});</script>
+<script>(function(){{var t={target_js};if(/[?&]ref=s(&|$)/.test(location.search))t+="&ref=s";location.replace(t);}})();</script>
 <style>body{{margin:0;font-family:system-ui,Tahoma,sans-serif;background:#111;color:#f5c542;display:grid;place-items:center;min-height:100vh;text-align:center}}a{{color:#f5c542}}img{{width:120px}}</style>
 </head><body><div><img src="/logo.png" alt="{brand}"><p>{title}</p><p><a href="{target}">فتح المنتج في متجر {brand}</a></p></div></body></html>
 """
