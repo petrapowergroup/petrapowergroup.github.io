@@ -9,7 +9,7 @@ import html, json, os, re, shutil, sys, urllib.request
 
 SB_URL = "https://akkshuvvgjqkattbxvvk.supabase.co"
 SB_KEY = os.environ.get("SB_ANON_KEY", "").strip()
-STORE = "https://ahmad12cloud.github.io/petra-store/shop/"
+STORE = "https://petrapowerstore.com/shop/"
 SITE = "https://petrapowergroup.github.io"
 BRAND = "Petra Power Energy"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
